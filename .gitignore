@@ -1,0 +1,12 @@
+# Frontend
+Drone-Frontend/node_modules/
+Drone-Frontend/dist/
+Drone-Frontend/.env
+
+# Backend
+Drone-Backend/node_modules/
+Drone-Backend/.env
+
+# General
+.DS_Store
+*.log
