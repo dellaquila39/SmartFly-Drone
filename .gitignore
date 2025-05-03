@@ -10,6 +10,18 @@ Drone-Frontend/**/.env.local
 Drone-Frontend/**/.env.*.local
 
 # ================ BACKEND ================ 
+# ================ FRONTEND ================ 
+# Dependencias y builds
+Drone-Frontend/**/node_modules/
+Drone-Frontend/**/dist/
+Drone-Frontend/**/.cache/  # ¡Clave para excluir la carpeta cache!
+
+# Variables de entorno
+Drone-Frontend/**/.env
+Drone-Frontend/**/.env.local
+Drone-Frontend/**/.env.*.local
+
+# ================ BACKEND ================ 
 Drone-Backend/node_modules/
 Drone-Backend/.env
 
@@ -32,4 +44,5 @@ pnpm-debug.log*
 
 # Sistema operativo
 .DS_Store
+Thumbs.db
 Thumbs.db
