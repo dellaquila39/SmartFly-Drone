@@ -13,7 +13,7 @@
       <v-menu 
         v-for="(item, index) in menuItems" 
         :key="index"
-        :open-on-hover="item.subitems"
+        :open-on-hover="!!item.subitems"
         offset-y
         transition="slide-y-transition"
       >
