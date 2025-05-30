@@ -26,11 +26,11 @@
       <!-- Contenedor del botón -->
       <div class="hero-cta-container">
   <a 
-    href="https://wa.me/5491234567890" 
-    class="whatsapp-btn"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
+  href="https://wa.me/+5491168885969" 
+  class="whatsapp-btn"
+  target="_blank"
+  rel="noopener noreferrer"
+>
     <v-icon class="whatsapp-icon">mdi-whatsapp</v-icon>
     <span>WhatsApp</span>
   </a>

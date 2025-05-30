@@ -2,6 +2,7 @@
   <div class="home-view">
     <HeroSection />
     <ServiceSection />
+    <BasicServices />
     <GalleryProject />
   </div>
 </template>
@@ -9,6 +10,7 @@
 <script>
   import HeroSection from '@/components/HeroSection.vue';
   import ServiceSection from '@/components/ServiceSection.vue';
+  import BasicServices from '@/components/BasicServices.vue';
   import GalleryProject from '@/components/GalleryProject.vue';
 
   export default {
@@ -17,7 +19,8 @@
     components: {
       HeroSection,
       ServiceSection,
-      GalleryProject
+      BasicServices,
+      GalleryProject,
     },
   }
 </script>
