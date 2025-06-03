@@ -65,9 +65,7 @@ export default {
 </script>
 
 <style scoped>
-/* =================== */
-/* Estructura General */
-/* =================== */
+
 .project-gateway {
   padding: 6rem 1.5rem;
   background: linear-gradient(180deg, #0a192f 0%, #07152a 100%);
@@ -94,9 +92,7 @@ export default {
   margin: 0 auto;
 }
 
-/* =================== */
-/* Grid de Servicios */
-/* =================== */
+
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -121,9 +117,7 @@ export default {
     0 0 0 2px rgba(0, 247, 255, 0.3);
 }
 
-/* =================== */
-/* Elementos de Tarjeta */
-/* =================== */
+
 .card-header {
   text-align: center;
   margin-bottom: 1.5rem;
@@ -164,9 +158,7 @@ export default {
   background: rgba(0, 247, 255, 0.1) !important;
 }
 
-/* =================== */
-/* Responsive Design */
-/* =================== */
+
 @media (max-width: 768px) {
   .project-gateway {
     padding: 4rem 1rem;

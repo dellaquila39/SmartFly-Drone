@@ -206,7 +206,7 @@ export default {
   padding-left: 32px !important;
 }
 
-/* Mobile Styles - Cambios aplicados */
+
 .mobile-menu-btn {
   transition: transform 0.3s ease;
 }

@@ -17,7 +17,7 @@
           <ul class="footer-links">
             <li><router-link to="/">Inicio</router-link></li>
             <li><router-link to="/servicios">Servicios</router-link></li>
-            <li><router-link to="/proyectos">Proyectos</router-link></li>
+            <li><router-link to="/productos">Productos</router-link></li>
             <li><router-link to="/contacto">Contacto</router-link></li>
           </ul>
         </v-col>
@@ -47,7 +47,7 @@ export default {
 	name: 'AppFooter',
 	data() {
 		return {
-			// Aquí puedes agregar datos reactivos si es necesario
+			
 		};
 	},
 }

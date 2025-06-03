@@ -91,9 +91,7 @@ export default {
 </script>
 
 <style scoped>
-/* =================== */
-/* Estructura General (Coherente con ServiceSection) */
-/* =================== */
+
 .basic-services-section {
   padding: 6rem 1.5rem;
   background: linear-gradient(180deg, #0a192f 0%, #07152a 100%);
@@ -120,9 +118,7 @@ export default {
   margin: 0 auto;
 }
 
-/* =================== */
-/* Timeline Structure */
-/* =================== */
+
 .services-timeline {
   position: relative;
   max-width: 1200px;
@@ -143,9 +139,7 @@ export default {
   z-index: 0;
 }
 
-/* =================== */
-/* Service Step - Adaptable a izquierda/derecha */
-/* =================== */
+
 .service-step {
   position: relative;
   width: calc(50% - 4rem);
@@ -194,9 +188,7 @@ export default {
   box-shadow: 0 0 15px rgba(0, 247, 255, 0.3);
 }
 
-/* =================== */
-/* Service Card - Estilo consistente */
-/* =================== */
+
 .step-card {
   background: rgba(10, 25, 47, 0.8);
   backdrop-filter: blur(10px);
@@ -266,9 +258,7 @@ export default {
   transform: scale(1.05);
 }
 
-/* =================== */
-/* Responsive Design */
-/* =================== */
+
 @media (max-width: 992px) {
   .timeline-track {
     left: 40px;

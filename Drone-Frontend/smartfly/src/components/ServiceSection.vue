@@ -263,9 +263,7 @@ export default {
 
 
 <style scoped>
-/* =================== */
-/* Estructura General */
-/* =================== */
+
 .services-section {
   padding: 6rem 1.5rem;
   background: linear-gradient(180deg, #0a192f 0%, #07152a 100%);
@@ -292,9 +290,7 @@ export default {
   margin: 0 auto;
 }
 
-/* =================== */
-/* Filtros */
-/* =================== */
+
 .category-filters {
   display: flex;
   justify-content: center;
@@ -328,9 +324,7 @@ export default {
   transform: translateY(-2px);
 }
 
-/* =================== */
-/* Tarjetas de Servicio */
-/* =================== */
+
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -408,9 +402,7 @@ export default {
   letter-spacing: 1px;
 }
 
-/* =================== */
-/* Responsive Design */
-/* =================== */
+
 @media (max-width: 768px) {
   .services-section {
     padding: 4rem 1rem;
