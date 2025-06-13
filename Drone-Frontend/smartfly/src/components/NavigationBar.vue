@@ -96,7 +96,7 @@ export default {
         },
         { 
           title: 'Servicios',
-          subitems: ['Equipos Profesionales', 'Cursos', 'Consultoría']
+          subitems: ['Soluciones Integrales', 'Equipos Profesionales', 'Cursos Disponibles']
         },
         { 
           title: 'Tienda',
