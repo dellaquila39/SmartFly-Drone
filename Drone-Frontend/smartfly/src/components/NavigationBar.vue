@@ -23,6 +23,7 @@
             class="menu-btn"
             v-bind="attrs"
             v-on="on"
+            :to="item.to"
           >
             {{ item.title }}
             <svg v-if="item.subitems" width="16" height="16" viewBox="0 0 24 24" class="dropdown-icon">
@@ -55,19 +56,25 @@
           :key="index"
           :value="openSubmenus[index]"
           @click.native.stop="toggleSubmenu(index)">
-
+          
           <template v-slot:activator>
-            <v-list-item-title class="mobile-menu-item">
-              {{ item.title }}
-              <svg 
-                v-if="item.subitems" 
-                width="16" 
-                height="16" 
-                viewBox="0 0 24 24"
-                class="mobile-custom-arrow">
-                <path fill="#00f7ff" d="M7 10l5 5 5-5z"/>
-              </svg>
-            </v-list-item-title>
+            <v-list-item 
+              :to="item.to" 
+              class="mobile-menu-item"
+            >
+              <v-list-item-title>
+                {{ item.title }}
+                <svg 
+                  v-if="item.subitems" 
+                  width="16" 
+                  height="16" 
+                  viewBox="0 0 24 24"
+                  class="mobile-custom-arrow"
+                >
+                  <path fill="#00f7ff" d="M7 10l5 5 5-5z"/>
+                </svg>
+              </v-list-item-title>
+            </v-list-item>
           </template>
 
           <v-list-item 
@@ -89,10 +96,10 @@ export default {
   data() {
     return {
       menuItems: [
-        { title: 'Inicio' },
+        { title: 'Inicio', to: '/' },
         { 
           title: 'Portafolio',
-          subitems: ['Filmación Aérea', 'Mapeo 3D', 'Inspecciones']
+          subitems: ['Proyectos Destacados', 'Nuestra Misión', 'Quienes Somos']
         },
         { 
           title: 'Servicios',
@@ -100,37 +107,29 @@ export default {
         },
         { 
           title: 'Tienda',
-          subitems: ['Drones', 'Accesorios', 'Software']
+          subitems: ['Drones', 'Accesorios', 'Repuestos']
         },
-        { title: 'Contacto' }
+        { title: 'Contacto', to: '/contacto' }
       ],
       navBackground: 'rgba(10, 25, 47, 0.95)',
-      isMobileMenuOpen: false, // Controla visibilidad del menú móvil
-      openSubmenus: {} // Estado de submenús abiertos
+      isMobileMenuOpen: false,
+      openSubmenus: {}
     }
   },
   created() {
-    // Inicializamos el estado de los submenús
     this.menuItems.forEach((_, index) => {
       this.$set(this.openSubmenus, index, false);
     });
   },
   methods: {
     toggleSubmenu(index) {
-      // Abre/cierra solo el submenú clickeado
       const newState = !this.openSubmenus[index];
-      
-      // Cierra otros submenús si se requiere (opcional)
       const updatedSubmenus = { ...this.openSubmenus };
       updatedSubmenus[index] = newState;
-      
       this.openSubmenus = updatedSubmenus;
-      
-      // Mantiene el menú principal abierto
       this.isMobileMenuOpen = true;
     },
     closeMobileMenu() {
-      // Cierra todo el menú y reinicia estados
       this.isMobileMenuOpen = false;
       this.openSubmenus = this.menuItems.reduce((acc, _, idx) => {
         acc[idx] = false;

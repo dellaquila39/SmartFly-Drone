@@ -184,7 +184,7 @@ export default {
         { label: 'Todas', value: 'all', icon: 'mdi-home' },
         { label: 'Residencial', value: 'residential', icon: 'mdi-home-city' },
         { label: 'Comercial', value: 'commercial', icon: 'mdi-office-building' },
-        { label: 'Hoteles', value: 'hotel', icon: 'mdi-hotel' },
+        { label: 'Hoteles', value: 'hotel', icon: 'mdi-office-building-marker-outline' },
         { label: 'Proyectos', value: 'project', icon: 'mdi-domain' }
       ],
       properties: [

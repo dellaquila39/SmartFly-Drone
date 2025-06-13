@@ -83,7 +83,7 @@ export default {
       categories: [
         { name: 'Monitoreo Industrial', icon: 'mdi-factory', color: '#00f7ff' },
         { name: 'Seguridad Perimetral', icon: 'mdi-security', color: '#25D366' },
-        { name: 'Producción Audiovisual', icon: 'mdi-video-4k', color: '#FF4081' },
+        { name: 'Producción Audiovisual', icon: 'mdi-video', color: '#FF4081' },
         { name: 'Capacitación', icon: 'mdi-school', color: '#FFC107' }
       ],
       services: [

@@ -45,19 +45,19 @@ export default {
         name: "Portafolio de Imágenes",
         icon: "mdi-image-filter-hdr",
         route: "/portafolio",
-        btnText: "Ver Galería Completa"
+        btnText: "Ver Imágenes"
       },
       {
-        name: "Proyectos Destacados",
+        name: "Aventuras Smartfly",
         icon: "mdi-lightning-bolt",
         route: "/destacados",
         btnText: "Explorar Casos"
       },
       {
-        name: "Somos SmartFly",
+        name: "Filmaciones Aéreas",
         icon: "mdi-helicopter",
         route: "/nosotros",
-        btnText: "Conocer Más"
+        btnText: "Ver Filmaciones"
       }
     ]
   })
